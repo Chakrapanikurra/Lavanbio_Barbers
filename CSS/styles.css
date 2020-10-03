@@ -23,7 +23,7 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 60%;
 }
 .nav-links li{
     list-style: none;
@@ -109,3 +109,27 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
+/*-----main content------*/
+main .site-title{
+    background: url('../Lavanbio_Barbers/images/Background_1.1.png');
+    background-color: thistle;
+    background-size: cover; 
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+    
+}
+
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+
+/*--x---main content----x--*/
