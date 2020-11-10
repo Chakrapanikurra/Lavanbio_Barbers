@@ -3,7 +3,8 @@
 html, body{
     margin: 0%;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: scroll;
+    
 }
 
 :root{
@@ -45,16 +46,37 @@ ul{
     list-style-type: none;
 }
 
+h1{
+    font-family: var(--lexend);
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+
 /*----x-------Global-----x--*/
 
 /*-----------navbar---------*/
 .nav{
     height: 0rem;
-    min-height: 10vh;
+    min-height: 6vh;
     padding: 0 2rem;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
     background: white;
+    transition:height 1s ease-in-out;
 } 
 
 .nav .nav-menu{
@@ -81,6 +103,10 @@ ul{
     color: var(--text-grey);
 }
 
+.collapse{
+    height: 30rem; 
+}
+
 .nav .nav-items{
     
     display: flex;
@@ -96,7 +122,7 @@ ul{
 }
 
 .nav .nav-items .nav-link:hover{
-    background-color: var(--midnight);
+    background-color: #7c533b;
 }
 
 .nav .nav-items .nav-link:hover a{
@@ -120,11 +146,86 @@ ul{
 }
 
 .nav .social i:hover{
-    color:#a1c4cf;
+    color: #7c533b;
 }
 /*--x---Social Icons----x--*/
 
 /*----X-------navbar----X----*/
+
+
+/*-----main------*/
+main .site-title{
+    
+    background: url("../images/background-photo.jpg");
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+    
+}
+
+main .site-title h1,h3{
+    margin: 3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background:#c38e70;
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    color: white;
+}
+
+/*-----Carousel------*/
+
+main .blog{
+    background: #705240;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    padding-bottom: 1.5rem;
+    background: white;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+main .blog-content .blog-title{
+    font-style: italic;
+}
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: #7c533b; 
+    margin: .5rem;
+}
+/*-x----Carousel---x---*/
+
+
+/*--x---main----x--*/
+
+
+
 
 /*           Veiewport less than or equal to 750px         */
 
@@ -143,7 +244,3 @@ ul{
 
 
 
-/*-----main content------*/
-
-
-/*--x---main content----x--*/
