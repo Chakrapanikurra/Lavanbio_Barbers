@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pricing</title>
+    <title>About US</title>
 
     <!------FontAwesome icons-->
     <link rel="stylesheet" href="./CSS/all.css">
@@ -14,13 +14,14 @@
 
     <!----- Custome Style------>
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/about_us.css">
 </head>
 <body>
-    <!--------Navigation------->
+     <!--------Navigation------->
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
-                <a href="#" class="text-grey">LAVANBIO BARBERS</a>
+                <a href="index.html" class="text-grey">LAVANBIO BARBERS</a>
             </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
@@ -30,22 +31,19 @@
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">Book Online</a>
+                        <a href="bookonline.html">Book Online</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">Cross-Reference</a>
+                        <a href="pricing.html">Services</a>
                     </li>
                     <li class="nav-link">
-                        <a href="pricing.html">Pricing</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">About</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="">250-299-9276</a>
+                        <a href="crossref.html">Cross-Reference</a>
                     </li>
                 </ul>
             </div>
@@ -57,5 +55,92 @@
             </div>
         </div>
     </nav>
+    <!--Main Site section-->
+
+    <div class="about-section">
+        <div class="container">
+            <img class="image" src="./images/aboutus_cover.png" alt="Richard_coverphoto">
+            <div class="overlay">
+                <div class="textOverlay">Richard Abankwa - Owner</div>
+            </div>
+        </div>
+        
+        <div class="inner-container">
+            <h1>Get to know Us</h1>
+            <p class="text">
+                L’avanbio came from the word in French “avance’ which means to lead and Bio a combining form meaning “life” occurring in loanwords from Greek. L’avanbio Barbershop was established in 5th June, 2016. Independently owned and operated by founder, Richard Abankwa. The shop started in a common area to a laundry room.
+
+                    Our shop specializes in cutting men’s hair, beard grooming, face shaves and head shaves, all delivered by experienced, licensed, and professionally trained barber. </p>
+
+        <p class="text">
+                     Our barbers adhere to the highest standards in quality service and offer a no-nonsense approach to men’s grooming and haircuts. You won’t get a bunch of mediocre pampering, salon or spa services here, but you will get personalized, tailored service.
+
+                    While we cater primarily to men, our barbershop is kid friendly and provides haircuts to anyone who wants a great classic men’s haircut, professional beard grooming, mustache, goatee, beard trim or head shave, the barber has specialized in all race hair types. Common haircuts include side-part, classic taper haircut, pompadour, flattop, high and tight, shear over comb, crew cut, clipper cut, coloring, breads, twist rows, comb twist and more. . L’avanbio is a multifaceted Barbershop that specialize in Men's, Women's, Kids Fade's, Shaves, Styling, Designs, Grooming and overall Haircare.
+        </p>
+
+        <p class="text">
+                         Come check us out, you’ll be glad you did. Call 250 299 9276 or email lavanbiocut@gmail.com for an appointment today or access our online booking now to schedule our barber. Walk-in services are available. Parking is available on the street and is usually easy to find. Sorry, but we DO NOT ACCEPT credit cards, for now we take cash and interact transfers. We are truly thankful for and value deeply, our Client’s, who trust in us to groom and style their hair needs, without you guy's, no barbershop family.
+        </p>     
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="index.html" method="POST">
+            <input type="text" class="contact-form-text" placeholder="Your name" required>
+            <input type="email" class="contact-form-text" placeholder="Your email" x required>
+            <input type="text" class="contact-form-text" placeholder="Your phone">
+            <textarea class="contact-form-text" placeholder="Your message"></textarea>
+            <input type="submit" class="contact-form-btn" value="Send">
+        </form>
+    </div>
+
+     <!--Footer-->
+     <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Founded in 2019, Lavanbio Barbers is the Authority in Men's Grooming. Get an exceptional haircut, shave and spa service from one of our friendly and skillful professionals. 
+                    Relax, Look Great, Feel Confident.
+                </p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"> <span> <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow Us</h2>
+                <p>Let us be Social</p>
+                <div>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-grey"> 
+                Copyright &copy 2020 All rights reserved | made by Chakrapani Kurra
+            </h4>
+        </div>
+        <div class="move-up">
+            <span> <i class="fas fa-arrow-circle-up fa-2x"></i> </span>
+        </div>
+    </footer>
+
+
+     <!--------Jquery Library file-->
+     <script src="./js/Jquery3.5.1.min.js"></script>
+
+     <!-------Owl-Carousel js-->
+     <script src="./js/owl.carousel.min.js"></script>
+ 
+     <!--------Custom JS file------>
+     <script src="./js/main.js"></script>
 </body>
 </html>

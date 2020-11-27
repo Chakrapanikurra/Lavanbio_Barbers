@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+.about-section{
+ 
+    background-size: 40%;
+    overflow: hidden;
+    padding: 100px 0px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    padding-left: 1rem;
+    
+}
+
+.inner-container h1{
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+img{
+    display: block;
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover{
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+}
+.image{
+    display: block;
+}
+.textOverlay {
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transition: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.container:hover .overlay{
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+    background-color: #7c533b;
+  }
+/* Stying Contact Form */
+
+.contact-section{
+    font-family: "monserrat" , sans-serif;
+    padding: 0px 0;
+    color: white;
+}
+
+.contact-section h1{
+    text-align: center;
+    color: #ddd;
+}
+.border{
+    width: 100px;
+    height: 10px;
+    background: #7c533b;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #7c533b;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #7c533b;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .image{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+       width: 100%;
+    }
+}

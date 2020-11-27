@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+.pricing-info{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    display: block;
+}
+
+.pricing-info h1{
+    color: white;
+    font-family: var(--lexend);
+}
+
+.pricing-info p{
+    font-family: var(--Abel);
+}
+
+.pricing-info .tag{
+    color:  #7c533b;
+}
+
+.border{
+    width: 100px;
+    height: 5px;
+    background: #7c533b;
+    margin: 20px auto;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #684532;
+  }
+  #t01 tr:nth-child(odd) {
+   background-color: #a77051;
+  }
+  #t01 th {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+table {
+    width:50%;
+    margin: auto auto;
+  }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+button.btn:hover{
+    background-color: transparent;
+    color:#7c533b;
+    outline: none;
+    border: none;
+}

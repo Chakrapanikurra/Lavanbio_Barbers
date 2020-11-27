@@ -16,7 +16,7 @@
     <!----- Custome Style------>
     <link rel="stylesheet" href="./CSS/styles.css">
 </head> 
-<body>
+<body onload="runClock();">
     <!--------Navigation------->
     <nav class="nav">
         <div class="nav-menu flex-row">
@@ -34,19 +34,16 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">Book Online</a>
+                        <a href="bookonline.html">Book Online</a>
                     </li>
                     <li class="nav-link">
-                        <a href="crossref.html">Cross-Reference</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="pricing.html">Pricing</a>
+                        <a href="pricing.html">Services</a>
                     </li>
                     <li class="nav-link">
                         <a href="about.html">About</a>
                     </li>
                     <li class="nav-link">
-                        <a href="">250-299-9276</a>
+                        <a href="crossref.html">Cross-Reference</a>
                     </li>
                 </ul>
             </div>
@@ -66,56 +63,130 @@
             <div class="site-background">
                 <h3>Lavanbio Barbers</h3>
                 <h1>Your Hairstyle is our priority</h1>
-                <button class="btn">Explore</button>
+                <button class="btn" onclick="openPrice()">Explore Our Services</button>
             </div>
         </div>
+
+        
 
         <!----Carousel Section----->
         
             <div class="blog">
                 <div class="container">
+                    <h1>Customer Reviews</h1>
                     <div class="owl-carousel owl-theme blog-post">
                         <div class="blog-content">
-                            <img src="./images/carousel-images/img1.jpeg" alt="post1">
+                            <a href="./bookonline.html">
+                            <img src="./images/carousel-images/img1.jpeg" alt="post1"> </a>
                             <div class="blog-title">
-                                <h3>"Amazing Haircut!"</h3>
-                                <button class="btn btn-blog">Book Now</button>
+                                <h3>"Perfect Haircut done with precision"</h3>
+                                <p>-Chakrapani Kurra</p>
+                               <!--<button class="btn btn-blog">Book Now</button>--->
                             </div>
                         </div>
                         <div class="blog-content">
-                            <img src="./images/carousel-images/img2.jpeg" alt="post1">
+                            <a href="./bookonline.html">
+                            <img src="./images/carousel-images/img2.jpeg" alt="post2"></a>
                             <div class="blog-title">
-                                <h3>"Amazing Haircut!"</h3>
-                                <button class="btn btn-blog">Book Now</button>
+                                <h3>"Really enjoyed my time at Lavbio Barbers"</h3>
+                                <p>-Shahbek Miru</p>
+                                <!--<button class="btn btn-blog">Book Now</button>--->
                             </div>
                         </div>
                         <div class="blog-content">
-                            <img src="./images/carousel-images/img3.jpeg" alt="post1">
+                            <a href="./bookonline.html">
+                            <img src="./images/carousel-images/img3.jpeg" alt="post3"></a>
                             <div class="blog-title">
-                                <h3>"Amazing Haircut!"</h3>
-                                <button class="btn btn-blog">Book Now</button>
+                                <h3>"Amazing customer service with excellent pricing"</h3>
+                                <p>-Naman Bangera</p>
+                                <!--<button class="btn btn-blog">Book Now</button>--->
                             </div>
                         </div>
                         <div class="blog-content">
-                            <img src="./images/carousel-images/img4.jpeg" alt="post1">
+                            <a href="./bookonline.html">
+                            <img src="./images/carousel-images/img4.jpeg" alt="post4"></a>
                             <div class="blog-title">
-                                <h3>"Amazing Haircut!"</h3>
-                                <button class="btn btn-blog">Book Now</button>
+                                <h3>"10/10, would recommend to every student"</h3>
+                                <p>-Josh Campinaro</p>
+                               <!--<button class="btn btn-blog">Book Now</button>--->
                             </div>
                         </div>
                         <div class="blog-content">
-                            <img src="./images/carousel-images/img5.jpeg" alt="post1">
+                            <a href="./bookonline.html">
+                            <img src="./images/carousel-images/img5.jpeg" alt="post5"></a>
                             <div class="blog-title">
-                                <h3>"Amazing Haircut!"</h3>
-                                <button class="btn btn-blog">Book Now</button>
+                                <h3>"Amazing Haircut, with outstanding customer service"</h3>
+                                <p>-Siddhartha Kher</p>
+                                <!--<button class="btn btn-blog">Book Now</button>--->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+            
+            <div class="time">
+               
 
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.5999807227136!2d-120.34430178630345!3d50.653119852809986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2c3f78064faf%3A0x996922e4b81b2a0e!2s225%20Waddington%20Dr%2C%20Kamloops%2C%20BC%20V2E%201M3!5e0!3m2!1sen!2sca!4v1605066728078!5m2!1sen!2sca" 
+                    width="850" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="hour-info">
+
+                    <h3>Our Doors Are Open!</h3>
+                    <h4>Mon-Thurs: 9am - 8pm</h4>
+                    <h4>Fri: 8am - 9pm</h4>
+                    <h4>Sat: 9am - 9pm</h4>
+                    <h4>Sun: Closed</h4>
+                </div>
+               
+            </div>
+           
       </main>
+
+
+
+      <!--Footer-->
+    <footer class="footer" >
+        <div class="container">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Founded in 2019, Lavanbio Barbers is the Authority in Men's Grooming. Get an exceptional haircut, shave and spa service from one of our friendly and skillful professionals. 
+                    Relax, Look Great, Feel Confident.
+                </p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"> <span> <i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow Us</h2>
+                <p>Let us be Social</p>
+                <div>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <br>
+                <div id="dateNow"> 11/3/2017 <br /> 2:45:12 p.m </div>
+                
+            </div>
+            
+
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-grey"> 
+                Copyright &copy 2020 All rights reserved | made by Chakrapani Kurra
+            </h4>
+        </div>
+        <div class="move-up">
+            <span> <i class="fas fa-arrow-circle-up fa-2x"></i> </span>
+        </div>
+    </footer>
 
 
     <!--------Jquery Library file-->
@@ -127,8 +198,6 @@
     <!--------Custom JS file------>
     <script src="./js/main.js"></script>
 
-    <footer>
-
-    </footer>
+    
 </body>
 </html>

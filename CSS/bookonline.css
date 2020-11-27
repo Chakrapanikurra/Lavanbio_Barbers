@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+    font-family: var(--lexend);
+    justify-content: center;
+    text-align: center;
+}
+#formBody{
+  padding: 2rem;
+  justify-content: center;
+  
+}
+#custInfo{
+    color: white;
+    font-family: var(--Abel);
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    color: white;
+  }
+
+  input[type=text], select{
+    display: block;
+    
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline-style: solid;
+    outline-color: #7c533b;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  
+  input[type=texy]:focus{
+    box-shadow: 0 0 10px 4px #7c533b;
+  }
+
+  form{
+      display: flex;
+  }
+
+  #appointmenttime{
+    background: #111;
+    color: white;
+    outline-style: solid;
+    border: 0;
+    outline-color: #7c533b;
+  }
+  
+  .optGroup{
+    display: flex;
+    justify-content: space-between;
+    outline-style: solid;
+    outline-color: #7c533b;
+    border: 0;
+  }
+
+  #reqBox{
+    display: block;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline-style: solid;
+    outline-color: #7c533b;
+    color: #ddd;
+    transition: 0.5s;
+  }
+
+  #send , #cancel{
+    border: none;
+    padding: 1rem 3rem;
+    margin: 2rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    background-color: #aaaaaa;
+    
+  }
+
+  #send:hover{
+    color: white;
+    background-color: #7c533b;
+  }
+  #cancel:hover{
+    color: white;
+    background-color: #7c533b;
+  }
