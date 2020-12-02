@@ -1,0 +1,46 @@
+
+h1{
+    color: white;
+    font-size: 2rem;
+    
+    text-align: center;
+}
+
+h1 ,h3{
+    color: white;
+}
+
+.ref-html a{
+    color:white;
+}
+
+.ref-css a{
+    color:white;
+}
+
+.ref-form a{
+    color:white;
+}
+.ref-table a{
+    color: white;
+}
+.ref-del a{
+    color: white;
+}
+
+.ref-multimedia a{
+    color: white;
+}
+.ref-Javascript a{
+    color: white;
+}
+.webpdf a{
+    color: white;
+    
+}
+em{
+   color: wheat;
+   display: block;
+   padding-bottom: 0.7rem;
+}
+

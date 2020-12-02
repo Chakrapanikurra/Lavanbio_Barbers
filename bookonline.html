@@ -49,10 +49,9 @@
                 </ul>
             </div>
             <div class="social text-grey">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/lavanbiocut/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/lavanbio/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/altruist200"><i class="fab fa-twitter-square"></i></a>
             </div>
         </div>
     </nav>
@@ -60,14 +59,16 @@
     <!--Main Site section-->
     <h1>Book Your Appointment</h1>
     <div class="border"></div>  
-    <form id="formBody" name="survey" action="" method="POST">
+
+    <!--2.4.3 a) Used variuos form elements and widgets in this form (datalist, legend, labels etc... )-->
+    <form id="formBody" name="survey" action="" method="POST" onsubmit="validateForm()">
 
         <fieldset id="custInfo">
             <legend>Customer Information</legend>
 
             <div class="formRow">
                 <label for="Name"> Name*</label>
-                <input name="custName" id="name" placeholder="First and Last name" autofocus required type="text">
+                <input name="custName" id="name" placeholder="First and Last name" autofocus  type="text">
             </div>
 
             <div class="formRow">
@@ -75,9 +76,11 @@
                 <input name="custPhone" id="phone" placeholder="(nnn)-nnn-nnnn" required type="text">
             </div>
 
+            <!--2.4.3 c) Used inline form validation with input type, and reg ex pattern-->
+
             <div class="formRow">
                 <label for="email"> Email*</label>
-                <input name="custemail" id="email"  required type="text" placeholder="Enter your email">
+                <input name="custemail" id="email"  required type="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
 
             <div class="formRow">
@@ -98,8 +101,8 @@
             <legend>Service Information</legend>
 
              <div class="formRow">
-                <label for="haircut-info"> Service Type:</label>
-                <input type="text" name="hairInfo" id="hair" list="hairType">
+                <label for="haircut-info"> Service Type:*</label>
+                <input type="text" name="hairInfo" id="hair" list="hairType" required>
                     <datalist id="hairType">
                         <option value="Facial"></option>
                         <option value="Simple Haircut"></option>
@@ -117,8 +120,8 @@
              </div>
 
              <div class="formRow">
-                <label for="birthdaytime">Appointment (date and time):</label>
-             <input type="datetime-local" id="appointmenttime" name="Appointmenttime">
+                <label for="birthdaytime">Appointment (date and time):*</label>
+             <input type="datetime-local" id="appointmenttime" name="Appointmenttime" >
              </div>
             <br>
              <div class="formRow">
@@ -166,17 +169,16 @@
                 <h2>Newsletter</h2>
                 <p>Stay update with our latest</p>
                 <div class="form-element">
-                    <input type="email" placeholder="Email"> <span> <i class="fas fa-chevron-right"></i></span>
+                    <input placeholder="Email"> <span> <i onclick="emailSubmit()" class="fas fa-chevron-right"></i></span>
                 </div>
             </div>
             <div class="follow">
                 <h2>Follow Us</h2>
                 <p>Let us be Social</p>
                 <div>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/lavanbiocut/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lavanbio/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/altruist200"><i class="fab fa-twitter-square"></i></a>
                 </div>
             </div>
         </div>

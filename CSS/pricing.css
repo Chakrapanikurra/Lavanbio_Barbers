@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
 .pricing-info{
     color: white;
     text-align: center;
